@@ -31,8 +31,8 @@ object FavoriteManager {
             // L'API renvoie souvent des valeurs "null", c'est pourquoi on utilise le "Elvis Operator" (?:)
             // pour fournir des valeurs par défaut si jamais la donnée est manquante.
             val entity = CocktailEntity(
-                id = cocktail.idDrink ?: "id_inconnu", // <-- C'est ici qu'on corrige l'erreur !
-                name = cocktail.strDrink ?: "Nom inconnu",
+                id = cocktail.idDrink ?: "id_inconnu",
+                name = cocktail.strDrink ?: "Name unknown",
                 imageUrl = cocktail.strDrinkThumb ?: "",
                 category = cocktail.strCategory ?: "",
                 instructions = cocktail.strInstructions ?: "",

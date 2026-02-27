@@ -37,7 +37,7 @@ fun FavoritesScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Mes Cocktails Favoris", fontWeight = FontWeight.Bold) },
+                title = { Text("My Favorite Cocktails", fontWeight = FontWeight.Bold) },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.background,
                     titleContentColor = MaterialTheme.colorScheme.primary
@@ -50,7 +50,7 @@ fun FavoritesScreen(
             if (favorites.isEmpty()) {
                 // Message centré si la liste est vide
                 Text(
-                    text = "Vous n'avez pas encore de favoris !",
+                    text = "You don't have any favorites yet!",
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.align(Alignment.Center)
@@ -112,7 +112,7 @@ fun FavoritesScreen(
                                 }) {
                                     Icon(
                                         imageVector = Icons.Default.Delete,
-                                        contentDescription = "Supprimer",
+                                        contentDescription = "Delete",
                                         tint = MaterialTheme.colorScheme.error // Couleur rouge par défaut
                                     )
                                 }
